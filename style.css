@@ -1,0 +1,222 @@
+:root {
+ --negro: #141414;    
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /*1rem = 10px */
+    padding: 0px;
+    margin: 0px;
+}
+/* PRENAV */
+.prenav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prenav img{
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+h1{
+    margin-left: -1.1rem;
+    font-family: "Oswald", sans-serif;
+}
+
+/* MENU  */
+
+.menu img {
+    width: 31rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 4rem;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 1rem;
+}
+.contain {
+    position: relative;
+    height: 30rem;
+    width: 8rem;
+  }
+.contain img {
+    position: absolute;
+    left: 0;
+    transition: 1.5s ease-in-out;
+  }
+  
+.contain img.top:hover {
+    opacity: 0;
+  }
+
+.card-titulo{
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Oswald";
+    margin-top: 2rem;
+    background-color: #f1f1f1;
+    color: var(--negro);
+  }
+
+.card-descripcion{
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Oswald";
+    margin-top: 2rem;
+}
+
+.precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: #f1f1f1;
+    color: var(--negro);
+    font-family: "Oswald";
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.card-body{
+    background-color: var(--negro);
+    padding-bottom: 2rem;
+    color: #f1f1f1;
+    border-radius: 10px;
+    width: 31rem;
+    height: 50rem;
+}
+
+
+
+.compra{
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Oswald";
+    margin-bottom: 4rem;
+}
+.compra a{
+    text-decoration: none;
+    color: var(--);
+}
+
+
+.Producto{
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem auto;
+    font-family: "Oswald";
+    padding: 4rem;
+    background-color: var(--negro);
+    color: #f1f1f1;
+}
+
+footer{
+    padding: 2rem;
+    background-color: var(--negro);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.footer i{
+    color: #f1f1f1;
+    font-family: "Oswald";
+    margin: 1rem;
+}
+
+
+
+/* MEDIAS QUERY */
+
+
+
+@media (min-width: 768px) {
+
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        padding-left: 2rem;
+        grid-template-rows: 1fr 1fr;
+    
+    }
+    
+    .menu img {
+            width: 20rem;
+            height: 30rem;
+        }
+        
+    .card-titulo{
+            font-size: 2rem;
+        }
+        
+    .card-descripcion{
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+        
+        
+    .card-body{
+            width: 20rem;
+            height: 53rem;
+        }
+        footer{
+            padding: 3rem;
+        }
+        .footer{
+            padding-bottom: 4rem;
+        }
+        .Producto{
+            font-size: 4rem;
+        }
+        
+    
+    }
+
+@media (min-width: 1440px) {
+
+    .menu{
+        padding: 5rem;
+    }
+    .menu img {
+        width: 40rem;
+        height: 50rem;   
+    }
+    .contain {
+        height: 50rem;
+        width: 30rem;
+      }
+    .card-body{
+        width: 40rem;
+        height: 73rem;
+        }
+    .card-titulo{
+            font-size: 3rem;
+        }
+    .card-descripcion{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    }
+
+
+
+
+
+
