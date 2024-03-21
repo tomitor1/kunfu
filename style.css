@@ -60,26 +60,33 @@ h1{
   }
 
 .card-titulo{
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
-    font-family: "Oswald";
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bold;
     margin-top: 2rem;
     background-color: #f1f1f1;
     color: var(--negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
 .card-descripcion{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: "Oswald";
     margin-top: 2rem;
+    padding: 1rem 2rem;
+    
 }
 
 .precio{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin: 2rem 0;
     background-color: #f1f1f1;
     color: var(--negro);
     font-family: "Oswald";
@@ -114,7 +121,7 @@ h1{
     font-size: 2rem;
     text-align: center;
     margin: 4rem auto;
-    font-family: "Oswald";
+    font-family: "Archivo Black", sans-serif;
     padding: 4rem;
     background-color: var(--negro);
     color: #f1f1f1;
@@ -189,10 +196,10 @@ footer{
     
     }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
 
     .menu{
-        padding: 5rem;
+        padding: 1rem;
     }
     .menu img {
         width: 40rem;
@@ -208,11 +215,16 @@ footer{
         }
     .card-titulo{
             font-size: 3rem;
+            padding: 1rem;
         }
     .card-descripcion{
             font-size: 2rem;
-            padding: 1rem;
+            padding: 0 1rem;
+            margin-top: 1rem;  
         }
+    .precio{
+        font-size: 2rem;
+    }
     }
 
 
